@@ -1,0 +1,77 @@
+{
+  "name": "DownloadFileFromS3",
+  "input": {
+    "version": "0",
+    "id": "12e50a14-3b80-07b9-15a4-992edc097ef9",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "913102450908",
+    "time": "2020-12-18T01:01:18Z",
+    "region": "eu-central-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA5JGJFWDODUSRDDPXP",
+        "arn": "arn:aws:iam::913102450908:user/lc5632662",
+        "accountId": "913102450908",
+        "accessKeyId": "ASIA5JGJFWDOLDAKCHZ5",
+        "userName": "lc5632662",
+        "sessionContext": {
+          "attributes": {
+            "creationDate": "2020-12-18T00:12:17Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2020-12-18T01:01:18Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "eu-central-1",
+      "sourceIPAddress": "148.64.28.128",
+      "userAgent": "[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36]",
+      "requestParameters": {
+        "X-Amz-Date": "20201218T010117Z",
+        "bucketName": "kwex-test-workspace-handler",
+        "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+        "x-amz-acl": "private",
+        "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+        "Host": "kwex-test-workspace-handler.s3.eu-central-1.amazonaws.com",
+        "X-Amz-Expires": "300",
+        "key": "test_file_1.txt",
+        "x-amz-storage-class": "STANDARD"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+        "bytesTransferredIn": 412,
+        "AuthenticationMethod": "QueryString",
+        "x-amz-id-2": "OEqu0Mrm7yJvHcTGmpkERz8smkzggW6srPn12xk6tczGD/EX12PAEX0cc5RepqiWuawGeEtcsRk=",
+        "bytesTransferredOut": 0
+      },
+      "requestID": "D4FF1CC41583BE2A",
+      "eventID": "202bbc40-fb53-4dd2-a22f-503a0efddc19",
+      "readOnly": false,
+      "resources": [
+        {
+          "type": "AWS::S3::Object",
+          "ARN": "arn:aws:s3:::kwex-test-workspace-handler/test_file_1.txt"
+        },
+        {
+          "accountId": "913102450908",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::kwex-test-workspace-handler"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": false,
+      "recipientAccountId": "913102450908",
+      "eventCategory": "Data"
+    }
+  },
+  "inputDetails": {
+    "truncated": false
+  }
+}
